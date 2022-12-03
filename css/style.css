@@ -121,8 +121,8 @@ body {
 	background-color: #2a87cd;
 	color: white;
 	/*border: solid black 1px;*/
-	line-height: 20px;
-/*	line-height: 130%;*/
+/*	line-height: 20px;*/
+	line-height: 150%;
 }
 .skills li {
 	font-size: 20px;
@@ -162,7 +162,8 @@ body {
 	border-bottom: 3px solid white;
 }
 .ci {
-	margin-top: 60px;
+	margin-top: 40px;
+	margin-bottom: 20px;
 	width: 100%;
 	font-weight: normal;
 }
