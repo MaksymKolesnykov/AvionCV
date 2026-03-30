@@ -54,7 +54,7 @@
         top: 100px;
         margin: 10px;
         height: 260px;
-        border: 5px solid white;
+        border: 5px solid #f1f1f1;
         border-radius: 50%;
       }
 
@@ -108,13 +108,17 @@
       }
 
       .workexperience-wrap {
+        /* padding: 10px; */
+        padding-left: 0;
         flex: 2;
         min-width: 400px;
       }
 
       .divider {
-        margin: 30px 20px;
-        margin-bottom: 0px;
+        margin-top: 30px;
+        margin-right: 30px;
+        /* margin: 30px 20px; */
+        /* margin-bottom: 0px; */
         width: 2px;
         background: rgb(30, 36, 43);
       }
@@ -135,18 +139,24 @@
         margin-bottom: 10px;
       }
 
-      .marg {
-        margin-left: 40px;
+      .contactinformation {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
       }
 
-      .contactinformation {
-        margin-top: 40px;
+      .contactinformation h4 {
+        margin-left: 20px;
+      }
+
+      .ci-line {
+        margin-left: 20px;
       }
 
       .contactinformation a {
         display: block;
-        /* margin-top: 20px; */
-        /* margin-bottom: 10px; */
+        padding: 6px;
         line-height: 1.5;
         font-family: "Lato", sans-serif;
         font-size: 24px;
@@ -156,24 +166,61 @@
         color: rgb(51, 51, 51);
       }
 
+      .icon {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .phone::before {
+        content: "";
+        display: block;
+        width: 24px;
+        height: 24px;
+        background-image: url(./img/icons/phone.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      .email::before {
+        content: "";
+        display: block;
+        width: 24px;
+        height: 24px;
+        background-image: url(./img/icons/mail.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
       .location {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
+      }
+
+      .location::before {
+        content: "";
+        display: block;
+        width: 24px;
+        height: 24px;
+        background-image: url(./img/icons/maps.png);
+        background-size: contain;
+        background-repeat: no-repeat;
       }
 
       .social-wrap {
         display: flex;
-        /* justify-content: space-between; */
-        /* padding: 20px; */
-        margin-left: 20px;
-        gap: 20px;
+        justify-content: space-around;
+        max-width: 260px;
       }
 
       .social img {
-        width: 60px;
+        width: 46px;
       }
 
       .skills-wrap {
-        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: left;
       }
 
       li {
@@ -182,9 +229,8 @@
       }
 
       .skills-card {
-        margin-top: 30px;
-        margin-left: 40px;
-        margin-bottom: 5px;
+        padding: 15px;
+        margin-left: 20px;
         font-family: "Lato", sans-serif;
         font-size: 24px;
         font-weight: 500;
@@ -194,22 +240,26 @@
         text-align: left;
       }
 
+      .trainings {
+        margin: 0;
+      }
+
       .drive-license {
-        margin-top: 60px;
-        margin-bottom: 60px;
+        padding: 10px;
+        margin-left: 28px;
         font-family: "Lato", sans-serif;
         font-size: 27px;
         font-weight: 900;
         font-style: italic;
         color: rgb(30, 36, 43);
-        text-align: center;
+        text-align: left;
         text-transform: uppercase;
       }
 
       .aboutme {
-        margin-left: 10px;
+        /* margin-left: 10px; */
         margin-bottom: 20px;
-        margin-right: 20px;
+        margin-right: 32px;
         font-family: "Lato", sans-serif;
         font-size: 22px;
         font-weight: 500;
@@ -256,7 +306,6 @@
       }
 
       .title-font {
-        /* margin-bottom: 10px; */
         font-family: "Lato", sans-serif;
         font-size: 24px;
         font-weight: 600;
@@ -287,10 +336,6 @@
         text-align: left;
         padding-left: 20px;
       }
-
-      /* .spacer {
-        height: 40px;
-      } */
 
       /* ================= RESPONSIVE ================= */
       @media (max-width: 1000px) {
@@ -328,7 +373,12 @@
         }
 
         .drive-license {
-          text-align: center;
+          margin-left: 25px;
+          text-align: left;
+        }
+
+        .social-wrap {
+          max-width: 300px;
         }
       }
 
@@ -363,10 +413,10 @@
         .aboutme {
           margin-right: 70px;
         }
-        .drive-license {
+        /* .drive-license {
           margin-top: 30px;
           margin-bottom: 30px;
-        }
+        } */
 
         h5 {
           margin-right: 70px;
@@ -375,6 +425,10 @@
         li {
           margin-right: 70px;
           /* font-size: 12px; */
+        }
+
+        .type-list {
+          margin-left: 30px;
         }
       }
     </style>
@@ -392,17 +446,17 @@
 
       <main class="main">
         <div class="skills-wrap">
-          <div class="contactinformation marg">
+          <div class="contactinformation">
             <h4>CONTACTS</h4>
-            <div class="line"></div>
+            <div class="line ci-line"></div>
             <div class="ci">
-              <div class="phone">
+              <div class="phone icon">
                 <a href="tel:+4916091407316">+49 160 91407316</a>
               </div>
-              <div class="email">
+              <div class="email icon">
                 <a href="mailto:kom79.de@gmail.com">kom79.de@gmail.com</a>
               </div>
-              <div class="location">
+              <div class="location icon">
                 <a
                   target="_blank"
                   href="https://maps.app.goo.gl/3MFnXHfRTDQdQwd99"
@@ -540,7 +594,10 @@
             </div>
             <h5 class="position">B1/B2 Base/Line maintenance Engineer</h5>
             <ul class="position-actions">
-              <li>Base maintenance of the Aircraft ATR 42-300 / ATR72-200.</li>
+              <li>
+                Base maintenance of the Aircrafts
+                <span>ATR 42-300 / ATR72-200</span>.
+              </li>
               <li>
                 Support of AOG events and remote recovery, coordinating with
                 operations and MCC to minimize delays.
@@ -557,8 +614,8 @@
             </div>
             <h5 class="position">B2 Line maintenance Engineer</h5>
             <ul class="position-actions">
-              <li>Line maintenance Boeing 737-700/800/900</li>
-              <li>Line maintenance Boeing 767-200/300</li>
+              <li>Line maintenance <span>Boeing 737-700/800/900</span></li>
+              <li>Line maintenance <span>Boeing 767-200/300</span></li>
               <li>Complex avionics troubleshooting activities.</li>
               <li>
                 Performed aircraft technical support during flight operations.
