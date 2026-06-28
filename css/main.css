@@ -1,0 +1,508 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: rgb(51, 51, 51);
+}
+
+body {
+  font-family: "Roboto", monospace, sans-serif;
+  background-color: #f2f4f7;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 80px auto;
+  margin-bottom: 20px;
+  background-color: #f1f1f1;
+  border: 2px solid rgb(30, 36, 43);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: 0.3s ease;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.container:hover {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+/* ================= HEADER ================= */
+.header {
+  position: relative;
+  /* padding: 20px 0; */
+  background-color: rgb(30, 36, 43);
+}
+
+.header img {
+  position: absolute;
+  left: 60px;
+  top: 40px;
+  margin: 10px;
+  height: 260px;
+  border: 5px solid #f1f1f1;
+  border-radius: 50%;
+}
+
+.title-wrap {
+  width: 700px;
+  min-height: 240px;
+  margin-left: 360px; /* ширина фото + отступ */
+}
+
+.title-wrap h2 {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  text-align: center;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 48px;
+  /* font-weight: lighter; */
+  font-weight: normal;
+  font-style: italic;
+}
+
+.title-wrap h1 {
+  text-align: center;
+  padding-bottom: 20px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 28px;
+  font-weight: lighter;
+  font-style: italic;
+}
+
+.title-wrap h3 {
+  text-align: center;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 28px;
+  font-weight: lighter;
+  font-style: italic;
+}
+
+/* ================= MAIN ================= */
+.main {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  padding: 20px;
+}
+
+.skills-wrap {
+  flex: 1;
+  min-width: 300px;
+}
+
+.workexperience-wrap {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 20px 0;
+  padding-left: 0;
+  flex: 2;
+  min-width: 400px;
+}
+
+.divider {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  margin-right: 30px;
+  width: 2px;
+  background: rgb(30, 36, 43);
+}
+
+h4 {
+  display: block;
+  margin-bottom: 5px;
+  font-family: "Roboto", sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.line {
+  width: 240px;
+  border: 2px solid rgb(30, 36, 43);
+  margin-bottom: 10px;
+}
+
+.contactinformation {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.contactinformation h4 {
+  margin-left: 20px;
+}
+
+.ci-line {
+  margin-left: 20px;
+}
+
+.contactinformation a,
+p {
+  display: block;
+  gap: 10px;
+  padding: 6px;
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: italic;
+  text-decoration: none;
+  color: rgb(51, 51, 51);
+}
+/* .status p {
+  display: block;
+  padding: 6px;
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  font-style: italic;
+  text-decoration: none;
+  color: rgb(51, 51, 51);
+} */
+
+.icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.phone::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-image: url(./../img/icons/phone.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.email::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-image: url(./../img/icons/mail.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* .location {
+        margin-bottom: 10px;
+      } */
+
+.location::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-image: url(./../img/icons/maps.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.social-wrap {
+  display: flex;
+  justify-content: space-around;
+  max-width: 260px;
+}
+
+.social img {
+  width: 46px;
+}
+
+.skills-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
+}
+
+li {
+  line-height: 1.25;
+  color: rgb(51, 51, 51);
+}
+
+.skills-card {
+  padding: 15px;
+  margin-left: 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: italic;
+  text-decoration: none;
+  color: rgb(51, 51, 51);
+  text-align: left;
+}
+
+.trainings {
+  margin: 0;
+}
+
+.drive-license {
+  padding: 10px;
+  margin-left: 28px;
+  font-family: "Roboto", sans-serif;
+  font-size: 27px;
+  font-weight: 900;
+  font-style: italic;
+  color: rgb(30, 36, 43);
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.aboutme {
+  margin-bottom: 20px;
+  margin-right: 32px;
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  font-style: italic;
+  text-decoration: none;
+  color: rgb(28, 31, 36);
+  text-align: left;
+}
+
+/* .aboutme h4 {
+        padding-top: 20px;
+      } */
+
+.aboutme p {
+  line-height: 1.2;
+}
+
+span {
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.type-ratings {
+  margin-bottom: 20px;
+}
+
+.type-ratings-title {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+.type-list {
+  margin-left: 60px;
+  margin-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  font-style: italic;
+  text-decoration: none;
+  color: rgb(30, 36, 43);
+  text-align: left;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.magenta {
+  color: blueviolet;
+}
+
+.work-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 40px;
+  flex-wrap: wrap;
+}
+
+.title-font {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  font-style: italic;
+  text-decoration: none;
+  color: rgb(51, 51, 51);
+  text-align: left;
+}
+
+h5 {
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  font-style: italic;
+  text-decoration: none;
+  color: rgb(51, 51, 51);
+}
+
+.position {
+  padding: 10px 0;
+}
+
+.position-actions {
+  margin: 20px;
+  margin-top: 0px;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: italic;
+  text-decoration: none;
+  color: rgb(30, 36, 43);
+  text-align: left;
+  padding-left: 20px;
+}
+
+.container-btn {
+  max-width: 1100px;
+  margin: 40px auto;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.icon-btn {
+  width: 60px;
+  height: 60px;
+}
+
+.button-wrap {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  background-color: yellowgreen;
+  border-radius: 12px;
+  gap: 60px;
+
+  transition: all 0.3s ease;
+}
+
+.button-wrap:hover {
+  cursor: pointer;
+  background-color: #ec583b;
+
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 10px 25px rgba(236, 88, 59, 0.5);
+}
+
+.button-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.button-wrap::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.5),
+    transparent
+  );
+  transition: 0.5s;
+}
+
+.button-wrap:hover::before {
+  left: 125%;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .main {
+    flex-direction: column;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  .title-wrap {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .header img {
+    position: static;
+    display: block;
+    margin: 0 auto 20px auto;
+  }
+
+  .header {
+    text-align: center;
+  }
+
+  .work-wrap {
+    flex-direction: column;
+  }
+
+  .drive-license {
+    margin-left: 25px;
+    text-align: left;
+  }
+
+  .social-wrap {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  .title-wrap h2 {
+    font-size: 48px;
+  }
+
+  .title-wrap h1 {
+    font-size: 38px;
+  }
+
+  .title-wrap h3 {
+    font-size: 28px;
+  }
+
+  .type-list {
+    font-size: 24px;
+  }
+
+  .position-actions {
+    font-size: 20px;
+  }
+
+  .container {
+    margin-top: 0px;
+    margin-bottom: 4px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+
+  .aboutme {
+    margin-right: 70px;
+  }
+  /* .drive-license {
+          margin-top: 30px;
+          margin-bottom: 30px;
+        } */
+
+  h5 {
+    margin-right: 70px;
+  }
+
+  li {
+    margin-right: 70px;
+    /* font-size: 12px; */
+  }
+
+  .type-list {
+    margin-left: 30px;
+  }
+}
