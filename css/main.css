@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-  max-width: 1140px;
+  max-width: 1100px;
   margin: 80px auto;
   margin-bottom: 20px;
   background-color: #f1f1f1;
@@ -29,14 +29,15 @@ body {
 /* ================= HEADER ================= */
 .header {
   position: relative;
-  /* padding: 20px 0; */
+  /* max-width: 1100px; */
+  padding: 30px 0;
   background-color: rgb(30, 36, 43);
 }
 
 .header img {
   position: absolute;
   left: 60px;
-  top: 40px;
+  top: 100px;
   margin: 10px;
   height: 260px;
   border: 5px solid #f1f1f1;
@@ -55,8 +56,7 @@ body {
   text-align: center;
   color: white;
   font-family: "Roboto", sans-serif;
-  font-size: 48px;
-  /* font-weight: lighter; */
+  font-size: clamp(1.75rem, 1.018rem + 3.66vw, 3.625rem);
   font-weight: normal;
   font-style: italic;
 }
@@ -66,7 +66,7 @@ body {
   padding-bottom: 20px;
   color: white;
   font-family: "Roboto", sans-serif;
-  font-size: 28px;
+  font-size: clamp(1.375rem, 1.246rem + 0.65vw, 1.75rem);
   font-weight: lighter;
   font-style: italic;
 }
@@ -75,7 +75,7 @@ body {
   text-align: center;
   color: white;
   font-family: "Roboto", sans-serif;
-  font-size: 28px;
+  font-size: clamp(1.375rem, 1.246rem + 0.65vw, 1.75rem);
   font-weight: lighter;
   font-style: italic;
 }
@@ -156,17 +156,6 @@ p {
   text-decoration: none;
   color: rgb(51, 51, 51);
 }
-/* .status p {
-  display: block;
-  padding: 6px;
-  line-height: 1.5;
-  font-family: "Roboto", sans-serif;
-  font-size: 24px;
-  font-weight: 500;
-  font-style: italic;
-  text-decoration: none;
-  color: rgb(51, 51, 51);
-} */
 
 .icon {
   display: flex;
@@ -194,10 +183,6 @@ p {
   background-repeat: no-repeat;
 }
 
-/* .location {
-        margin-bottom: 10px;
-      } */
-
 .location::before {
   content: "";
   display: block;
@@ -212,10 +197,6 @@ p {
   display: flex;
   justify-content: space-around;
   max-width: 260px;
-}
-
-.social img {
-  width: 46px;
 }
 
 .skills-wrap {
@@ -270,10 +251,6 @@ li {
   text-align: left;
 }
 
-/* .aboutme h4 {
-        padding-top: 20px;
-      } */
-
 .aboutme p {
   line-height: 1.2;
 }
@@ -309,9 +286,9 @@ span {
   visibility: hidden;
 }
 
-.magenta {
+/* .magenta {
   color: blueviolet;
-}
+} */
 
 .work-wrap {
   display: flex;
@@ -436,7 +413,7 @@ h5 {
   .header img {
     position: static;
     display: block;
-    margin: 0 auto 20px auto;
+    margin: 0 auto;
   }
 
   .header {
@@ -458,7 +435,7 @@ h5 {
 }
 
 @media (max-width: 600px) {
-  .title-wrap h2 {
+  /* .title-wrap h2 {
     font-size: 48px;
   }
 
@@ -468,7 +445,7 @@ h5 {
 
   .title-wrap h3 {
     font-size: 28px;
-  }
+  } */
 
   .type-list {
     font-size: 24px;
@@ -488,10 +465,6 @@ h5 {
   .aboutme {
     margin-right: 70px;
   }
-  /* .drive-license {
-          margin-top: 30px;
-          margin-bottom: 30px;
-        } */
 
   h5 {
     margin-right: 70px;
