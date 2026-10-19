@@ -390,10 +390,28 @@ h5 {
   left: 125%;
 }
 
+@media (max-width: 1180px) {
+  .container {
+    margin: 80px 30px;
+  }
+
+  .header img {
+    /* position: absolute; */
+    left: 36px;
+    /* top: 100px; */
+  }
+
+  .title-wrap {
+    display: block;
+    margin-left: 150px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
 @media (max-width: 1000px) {
   .container {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 30px 30px;
   }
 
   .main {
